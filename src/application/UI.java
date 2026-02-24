@@ -58,14 +58,14 @@ public class UI {
 	}
 
 	private static void printPiece(ChessPiece piece) {
-		if (piece == null) {
-			System.out.print("-");
-		} else {
-			if (piece.getColor() == Color.WHITE) {
-				System.out.print(ANSI_WHITE + piece + ANSI_RESET);
-			} else {
-				System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
-			}
-		}
+	    if (piece == null) {
+	        System.out.print("- ");
+	    } else {
+	        if (piece.getColor() == Color.WHITE) {
+	            System.out.print(ANSI_WHITE + piece + ANSI_RESET + " ");
+	        } else {
+	            System.out.print(ANSI_YELLOW + piece + ANSI_RESET + " ");
+	        }
+	    }
 	}
-}
+	}
